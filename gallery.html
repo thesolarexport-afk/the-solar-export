@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE SOLAR EXPORT | Project Gallery</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Arial, sans-serif;
+      background: #f4f7f5; color: #17231d;
+    }
+    header {
+      background: #123d2b; color: white; text-align: center;
+      padding: 28px 16px;
+    }
+    header h1 { margin: 0 0 8px; font-size: 28px; }
+    header p { margin: 0; color: #d7eadf; }
+    main { max-width: 1100px; margin: auto; padding: 28px 16px; }
+    h2 { color: #155b39; margin: 0 0 18px; }
+    .gallery {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    figure {
+      margin: 0; background: white; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    }
+    figure img {
+      display: block; width: 100%; height: 230px; object-fit: cover;
+      background: #e5ece7;
+    }
+    figcaption { padding: 12px 14px; font-weight: 600; }
+    .note {
+      margin-top: 22px; padding: 14px; background: #e5f2e9;
+      border-radius: 10px; line-height: 1.5;
+    }
+    footer { text-align: center; padding: 20px; color: #53645a; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THE SOLAR EXPORT</h1>
+    <p>Our Solar Installation Gallery</p>
+  </header>
+  <main>
+    <h2>Our Work</h2>
+    <section class="gallery">
+      <figure><img src="images/photo1.jpg" alt="Solar panel installation"><figcaption>Solar Panel Installation</figcaption></figure>
+      <figure><img src="images/photo2.jpg" alt="Rooftop solar project"><figcaption>Rooftop Solar Project</figcaption></figure>
+      <figure><img src="images/photo3.jpg" alt="Solar mounting structure"><figcaption>Solar Structure</figcaption></figure>
+      <figure><img src="images/photo4.jpg" alt="Solar inverter installation"><figcaption>Inverter Installation</figcaption></figure>
+    </section>
+    <div class="note">
+      <strong>Photo setup:</strong> GitHub repository mein <code>images</code> naam ka folder banayein.
+      Apni photos ko <code>photo1.jpg</code>, <code>photo2.jpg</code>, <code>photo3.jpg</code> aur
+      <code>photo4.jpg</code> naam dekar us folder mein upload karein. Agar aapki photo PNG hai,
+      to HTML mein uska exact naam aur extension (.png) likhna hoga.
+    </div>
+  </main>
+  <footer>© THE SOLAR EXPORT</footer>
+</body>
+</html>
