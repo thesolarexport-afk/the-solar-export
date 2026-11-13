@@ -2,60 +2,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery | THE SOLAR EXPORT</title>
-<link rel="stylesheet" href="style.css">
-<style>
-.gallery {
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:30px 0;
-}
-.gallery img {
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:12px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Project Gallery | THE SOLAR EXPORT</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-<div class="nav">
-<a class="logo" href="index.html">THE SOLAR <span>EXPORT</span></a>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="materials.html">Materials</a>
-<a href="calculator.html">Calculator</a>
-<a class="active" href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-</div>
-</header>
+  <header>
+    <h1>THE SOLAR EXPORT</h1>
+    <p>Our Solar Projects Gallery</p>
+  </header>
 
-<main class="container">
-<h1>Our Solar Gallery</h1>
-<p>Solar installation work and project photos.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="materials.html">Materials</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<div class="gallery">
-<img src="images/photo1.jpg" alt="Solar Project Photo 1">
-<img src="images/photo2.jpg" alt="Solar Project Photo 2">
-</div>
-</main>
+  <main>
+    <h2 style="text-align:center;">Our Solar Work</h2>
+    <div class="gallery-grid" id="gallery"></div>
+  </main>
 
-<footer>
-<div class="foot">
-<div>
-<div class="logo" style="color:white">THE SOLAR <span>EXPORT</span></div>
-<p>Solar installation support & material information.</p>
-</div>
-</div>
-</footer>
+  <footer>
+    <p>© THE SOLAR EXPORT</p>
+    <p>WhatsApp: 8160634197</p>
+  </footer>
+
+  <script>
+    const gallery = document.getElementById("gallery");
+
+    for (let i = 1; i <= 50; i++) {
+      const img = document.createElement("img");
+      img.src = `images/photo${i}.jpg`;
+      img.alt = `Solar Project ${i}`;
+      img.onerror = () => img.remove();
+      gallery.appendChild(img);
+    }
+  </script>
 
 </body>
 </html>
