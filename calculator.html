@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="THE SOLAR EXPORT - Solar installation support, materials and enquiries."><title>Solar Calculator | THE SOLAR EXPORT</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="top"><span>Solar Installation • Residential & Commercial</span><span>WhatsApp: 8160634197</span></div>
+<header><div class="nav"><a class="logo" href="index.html">THE SOLAR <span>EXPORT</span></a><nav><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="" href="services.html">Services</a><a class="" href="materials.html">Materials</a><a class="active" href="calculator.html">Calculator</a><a class="" href="contact.html">Contact</a></nav></div></header>
+
+<section class="pagehead"><div class="container"><span class="tag">ESTIMATE TOOL</span><h1>Solar system calculator</h1><p class="lead">Enter your average monthly electricity units to get a simple preliminary system-size estimate.</p></div></section>
+<section class="container"><div class="card form"><label for="units">Monthly electricity use (units)</label><input id="units" type="number" min="1" placeholder="Example: 300"><button class="btn dark" style="border:0;margin-top:16px;cursor:pointer" onclick="calc()">Calculate estimate</button><div id="out" class="result" aria-live="polite"></div><p class="lead">This is only a rough estimate. Actual system size depends on roof space, sunlight, shading, sanctioned load and site inspection.</p></div></section>
+<script>function calc(){const u=Number(document.getElementById('units').value);const o=document.getElementById('out');if(!u||u<1){o.textContent='Please enter monthly units.';return;}const kw=(u/30/4).toFixed(1);o.textContent='Approximate system size: '+kw+' kW';}</script>
+
+<footer><div class="foot"><div><div class="logo" style="color:white">THE SOLAR <span>EXPORT</span></div><p>Solar installation support & material information.</p></div><div><b>Contact</b><p>WhatsApp: <a href="https://wa.me/918160634197">8160634197</a></p><p>Vadodara • Anand • Bharuch</p></div></div></footer>
+</body></html>
