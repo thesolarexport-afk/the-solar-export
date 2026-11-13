@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06264b">
+<title>THE SOLAR EXPORT | Solar Energy Solutions</title>
+<style>
+:root{--navy:#06264b;--blue:#087bdc;--yellow:#ffd21a;--orange:#ff8500;--green:#08c96b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f4f7fb}
+header{background:var(--navy);color:white;padding:15px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}.logo{width:45px;height:45px;border-radius:50%;background:white;color:var(--navy);display:grid;place-items:center;font-size:23px}
+.lang button{border:0;border-radius:9px;background:white;color:#15243a;padding:8px 10px;margin-left:3px;font-weight:700;cursor:pointer}.lang button.active{background:var(--yellow)}
+.hero{min-height:650px;padding:45px 20px 55px;text-align:center;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(1,25,52,.62),rgba(1,25,52,.82)),url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=85') center/cover}
+.hero-logo{width:125px;height:125px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;font-size:54px;border:7px solid #e8f4ff;box-shadow:0 8px 30px #0005}
+h1{font-size:clamp(32px,7vw,58px);margin:22px 0 8px;letter-spacing:1px}.tagline{color:var(--yellow);font-size:clamp(20px,4vw,28px);font-weight:800;margin:8px 0 18px}.intro{font-size:clamp(17px,3vw,23px);max-width:760px;line-height:1.5;margin:8px auto 28px}
+.actions{width:min(100%,520px);display:grid;gap:14px}.action{display:block;text-decoration:none;border:0;border-radius:14px;padding:19px 15px;font-size:21px;font-weight:800;color:white;box-shadow:0 5px 14px #0003;cursor:pointer}.enquiry{background:var(--orange)}.calc{background:var(--yellow);color:#111}.wa{background:var(--green)}.materials{background:#0789e9}
+section{padding:48px 18px;max-width:1050px;margin:auto}section h2{text-align:center;color:var(--navy);font-size:30px;margin:0 0 22px}.sub{text-align:center;color:#56657a;margin:-10px auto 28px;max-width:720px;line-height:1.5}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:white;border-radius:16px;padding:22px;box-shadow:0 5px 20px #0b2c5010}.card h3{color:#07569a;margin-top:0}.card p{line-height:1.6;color:#526174}
+.calcbox,.formbox{background:white;border-radius:18px;padding:24px;max-width:650px;margin:auto;box-shadow:0 8px 25px #0b2c5012}
+label{display:block;font-weight:700;margin:12px 0 6px}input,select,textarea{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:9px;font:inherit}textarea{min-height:90px}.result{font-size:19px;font-weight:800;color:#07569a;margin-top:16px;line-height:1.5}.submit{margin-top:16px;width:100%;border:0;border-radius:10px;padding:15px;background:var(--orange);color:white;font-size:18px;font-weight:800;cursor:pointer}
+footer{background:var(--navy);color:white;text-align:center;padding:28px 16px;line-height:1.8}.float{position:fixed;right:14px;bottom:16px;z-index:9;background:var(--green);color:white;text-decoration:none;padding:13px 17px;border-radius:30px;font-weight:800;box-shadow:0 5px 18px #0004}
+@media(max-width:520px){header{padding:11px}.brand{font-size:15px}.logo{width:38px;height:38px}.lang button{padding:7px 8px;font-size:12px}.hero{min-height:620px}.action{font-size:19px;padding:17px 12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">☀</div><span>THE SOLAR EXPORT</span></div>
+  <div class="lang"><button class="active" onclick="setLang('hi',this)">हिन्दी</button><button onclick="setLang('en',this)">English</button><button onclick="setLang('gu',this)">ગુજરાતી</button></div>
+</header>
+<main>
+<div class="hero">
+  <div class="hero-logo">☀</div>
+  <h1>THE SOLAR EXPORT</h1>
+  <div class="tagline" id="tagline">स्वच्छ ऊर्जा • उज्ज्वल भविष्य</div>
+  <p class="intro" id="intro">भरोसेमंद सोलर इंस्टॉलेशन, फैब्रिकेशन और सोलर सॉल्यूशन</p>
+  <div class="actions">
+    <a class="action enquiry" href="#enquiry" id="btnEnq">📝 Enquiry करें</a>
+    <a class="action calc" href="#calculator" id="btnCalc">☀️ सोलर कैलकुलेशन</a>
+    <a class="action wa" href="https://wa.me/918160634197?text=Namaste%2C%20mujhe%20solar%20system%20ki%20jankari%20chahiye" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a class="action materials" href="#materials" id="btnMat">📋 सोलर मटेरियल</a>
+    <a class="action materials" href="#services" id="btnWash">💧 Solar Washing Service</a>
+  </div>
+</div>
+
+<section id="services">
+<h2 id="serviceTitle">हमारी सर्विस</h2>
+<p class="sub" id="serviceSub">घर और कमर्शियल साइट के लिए सोलर इंस्टॉलेशन और संबंधित सेवाएं।</p>
+<div class="cards">
+ <article class="card"><h3>🏠 Residential Solar</h3><p>घर की छत पर ऑन-ग्रिड सोलर सिस्टम इंस्टॉलेशन।</p></article>
+ <article class="card"><h3>🏢 Commercial Solar</h3><p>दुकान, ऑफिस, फैक्ट्री और कमर्शियल प्रोजेक्ट के लिए सोलर समाधान।</p></article>
+ <article class="card"><h3>🧰 Fabrication & Structure</h3><p>GI पाइप स्ट्रक्चर और साइट के अनुसार इंस्टॉलेशन कार्य।</p></article>
+ <article class="card"><h3>💧 Solar Panel Washing</h3><p>सोलर पैनल की सफाई और वॉशिंग सर्विस के लिए संपर्क करें।</p></article>
+</div>
+</section>
+
+<section id="materials">
+<h2>Solar Material Details</h2>
+<p class="sub">उपलब्ध/इस्तेमाल किए जाने वाले ब्रांड और मटेरियल की जानकारी। स्टॉक और मॉडल की पुष्टि enquiry पर करें।</p>
+<div class="cards">
+ <article class="card"><h3>1. GI Structure</h3><p>• 40 × 80 GI Pipe<br>• 40 × 40 GI Pipe</p></article>
+ <article class="card"><h3>2. Inverter Brands</h3><p>• Solar Yaan<br>• Polycab<br>• Waaree<br>• K-Solar<br>• Other brands</p></article>
+ <article class="card"><h3>3. Electrical Material</h3><p>• Polycab AC Wire<br>• Polycab DC Wire<br>• Polycab PVC Pipe<br>• AC Box<br>• DC Box</p></article>
+</div>
+</section>
+
+<section id="calculator">
+<h2 id="calcTitle">Solar Calculator</h2>
+<p class="sub" id="calcSub">अपना मासिक बिजली बिल डालें और शुरुआती अनुमान देखें। यह केवल अनुमान है, final quotation नहीं।</p>
+<div class="calcbox">
+<label for="bill" id="billLabel">मासिक बिजली बिल (₹)</label>
+<input id="bill" type="number" min="0" placeholder="जैसे 2500">
+<button class="submit" onclick="calculate()" id="calcButton">Estimate देखें</button>
+<div class="result" id="result" aria-live="polite"></div>
+</div>
+</section>
+
+<section id="enquiry">
+<h2 id="enqTitle">Solar Enquiry</h2>
+<p class="sub" id="enqSub">अपनी जानकारी भरें। आपकी enquiry WhatsApp पर खुलेगी।</p>
+<div class="formbox">
+<label for="name">नाम</label><input id="name" placeholder="आपका नाम">
+<label for="phone">मोबाइल नंबर</label><input id="phone" type="tel" placeholder="मोबाइल नंबर">
+<label for="city">शहर / लोकेशन</label><input id="city" placeholder="जैसे Vadodara">
+<label for="need">किस काम के लिए enquiry है?</label>
+<select id="need"><option>Residential Solar</option><option>Commercial Solar</option><option>Solar Material</option><option>Solar Washing</option><option>Other</option></select>
+<label for="message">अन्य जानकारी</label><textarea id="message" placeholder="जैसे 3 kW rooftop solar chahiye"></textarea>
+<button class="submit" onclick="sendEnquiry()">WhatsApp पर Enquiry भेजें</button>
+</div>
+</section>
+</main>
+<footer>
+<strong>THE SOLAR EXPORT</strong><br>
+Service Areas: Vadodara • Anand • Bharuch • Ahmedabad • Nadiad<br>
+WhatsApp / Call: 8160634197<br>
+<small>स्वच्छ ऊर्जा • उज्ज्वल भविष्य</small>
+</footer>
+<a class="float" href="https://wa.me/918160634197" target="_blank" rel="noopener">💬 WhatsApp</a>
+<script>
+function calculate(){
+ const bill=Number(document.getElementById('bill').value);
+ const out=document.getElementById('result');
+ if(!bill||bill<0){out.textContent='कृपया सही मासिक बिल डालें।';return}
+ const units=bill/7.5, kw=units/120;
+ out.textContent='अनुमानित उपयोग: '+Math.round(units)+' यूनिट/माह | शुरुआती सिस्टम साइज: लगभग '+Math.max(1,Math.round(kw*10)/10)+' kW. सही साइज के लिए बिजली बिल और छत की जगह जांचना जरूरी है।';
+}
+function sendEnquiry(){
+ const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),c=document.getElementById('city').value.trim(),need=document.getElementById('need').value,m=document.getElementById('message').value.trim();
+ if(!n||!p){alert('कृपया नाम और मोबाइल नंबर भरें।');return}
+ const msg=`Solar Enquiry%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0ALocation: ${encodeURIComponent(c)}%0ARequirement: ${encodeURIComponent(need)}%0ADetails: ${encodeURIComponent(m)}`;
+ window.open('https://wa.me/918160634197?text='+msg,'_blank');
+}
+const translations={
+ hi:{tag:'स्वच्छ ऊर्जा • उज्ज्वल भविष्य',intro:'भरोसेमंद सोलर इंस्टॉलेशन, फैब्रिकेशन और सोलर सॉल्यूशन',enq:'📝 Enquiry करें',calc:'☀️ सोलर कैलकुलेशन',mat:'📋 सोलर मटेरियल',wash:'💧 Solar Washing Service',st:'हमारी सर्विस',ss:'घर और कमर्शियल साइट के लिए सोलर इंस्टॉलेशन और संबंधित सेवाएं।',ct:'Solar Calculator',cs:'अपना मासिक बिजली बिल डालें और शुरुआती अनुमान देखें। यह केवल अनुमान है, final quotation नहीं।',bl:'मासिक बिजली बिल (₹)',cb:'Estimate देखें',et:'Solar Enquiry',es:'अपनी जानकारी भरें। आपकी enquiry WhatsApp पर खुलेगी।'},
+ en:{tag:'Clean Energy • Bright Future',intro:'Trusted solar installation, fabrication and solar solutions',enq:'📝 Enquire Now',calc:'☀️ Solar Calculator',mat:'📋 Solar Materials',wash:'💧 Solar Washing Service',st:'Our Services',ss:'Solar installation and related services for homes and commercial sites.',ct:'Solar Calculator',cs:'Enter your monthly electricity bill for an initial estimate. This is not a final quotation.',bl:'Monthly electricity bill (₹)',cb:'Get Estimate',et:'Solar Enquiry',es:'Fill in your details. Your enquiry will open in WhatsApp.'},
+ gu:{tag:'સ્વચ્છ ઊર્જા • ઉજ્જવળ ભવિષ્ય',intro:'વિશ્વસનીય સોલર ઇન્સ્ટોલેશન, ફેબ્રિકેશન અને સોલર સોલ્યુશન્સ',enq:'📝 પૂછપરછ કરો',calc:'☀️ સોલર કેલ્ક્યુલેશન',mat:'📋 સોલર મટિરિયલ',wash:'💧 સોલર વોશિંગ સર્વિસ',st:'અમારી સેવાઓ',ss:'ઘર અને કોમર્શિયલ સાઇટ માટે સોલર ઇન્સ્ટોલેશન અને સંબંધિત સેવાઓ.',ct:'સોલર કેલ્ક્યુલેટર',cs:'પ્રારંભિક અંદાજ માટે તમારું માસિક વીજળી બિલ દાખલ કરો. આ અંતિમ ક્વોટેશન નથી.',bl:'માસિક વીજળી બિલ (₹)',cb:'અંદાજ જુઓ',et:'સોલર પૂછપરછ',es:'તમારી વિગતો ભરો. પૂછપરછ WhatsAppમાં ખુલશે.'}
+};
+function setLang(lang,btn){
+ document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+ const t=translations[lang];for(const [id,key] of [['tagline','tag'],['intro','intro'],['btnEnq','enq'],['btnCalc','calc'],['btnMat','mat'],['btnWash','wash'],['serviceTitle','st'],['serviceSub','ss'],['calcTitle','ct'],['calcSub','cs'],['billLabel','bl'],['calcButton','cb'],['enqTitle','et'],['enqSub','es']])document.getElementById(id).textContent=t[key];
+}
+</script>
+</body></html>
