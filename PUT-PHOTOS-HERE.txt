@@ -1,0 +1,1 @@
+Place your solar project and product images in this folder. To display them publicly, reference their filenames from the relevant HTML page.

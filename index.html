@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="THE SOLAR EXPORT - Solar solutions, materials and installation enquiries.">
+  <title>THE SOLAR EXPORT | Home</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">THE <span>SOLAR</span> EXPORT</a>
+<button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+<nav id="mainNav"><a class="active" href="index.html">Home</a><a href="materials.html">Materials</a><a href="panels.html">Solar Panels</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow">SOLAR SOLUTIONS & MATERIALS</p><h1>Power Your Future<br><span>With Solar Energy</span></h1><p>Solar installation support, solar materials and panel information in one place.</p><a class="btn" href="#enquiry">Send Enquiry</a></div><div class="hero-art">☀️<div class="solar-roof">▰ ▰ ▰<br>▰ ▰ ▰</div></div></section>
+<section class="section enquiry-section" id="enquiry"><div class="section-heading"><p class="eyebrow">GET IN TOUCH</p><h2>Solar Enquiry Form</h2><p>Share your details. We will contact you on WhatsApp.</p></div>
+<form id="enquiryForm" class="form-card">
+<div class="form-grid">
+<label>Customer Name *<input name="name" required placeholder="Enter your name"></label>
+<label>Mobile Number *<input name="phone" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"></label>
+<label class="full">Full Address *<textarea name="address" required rows="2" placeholder="Enter complete address"></textarea></label>
+<label>Monthly Electricity Bill (₹) *<input name="bill" type="number" min="0" required placeholder="Example: 2500"></label>
+<label>Current Location (Optional)<div class="location-row"><input name="location" id="locationField" placeholder="Area / location"><button type="button" class="btn btn-light" onclick="getLocation()">Get Location</button></div></label>
+<label class="full">Message (Optional)<textarea name="message" rows="3" placeholder="Tell us your solar requirements"></textarea></label>
+</div><button class="btn submit-btn" type="submit">Send Enquiry on WhatsApp</button><p class="form-note">* Required fields. Your WhatsApp app will open with the enquiry details.</p>
+</form></section>
+<section class="section"><div class="section-heading"><p class="eyebrow">EXPLORE</p><h2>Our Website Sections</h2></div><div class="tile-grid">
+<a class="tile" href="materials.html"><span>🧰</span><h3>Solar Materials</h3><p>Wires, pipes, inverter, ACDB and DCDB.</p></a>
+<a class="tile" href="panels.html"><span>☀️</span><h3>Solar Panels</h3><p>Waaree and Adani panel information.</p></a>
+<a class="tile" href="gallery.html"><span>📷</span><h3>Photo Gallery</h3><p>Solar project and product photos.</p></a>
+</div></section>
+</main><footer><strong>THE SOLAR EXPORT</strong><p>Solar materials • Panel information • Enquiries</p><small>Product specifications and warranties depend on the exact model. Please verify the official datasheet.</small></footer>
+<a class="whatsapp-float" href="https://wa.me/918160634197" target="_blank" rel="noopener">WhatsApp</a><script src="script.js"></script></body></html>
